@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige SACCO Operations</title>
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Top Navigation -->
+    <nav class="bg-blue-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">🏆 PRESTIGE SACCO</h1>
+            <span class="text-sm bg-blue-800 px-3 py-1 rounded">Core V1.0 Portal</span>
+        </div>
+    </nav>
+
+    <!-- Operational Content -->
+    <main class="container mx-auto my-8 p-4">
+        
+        <!-- Summary Analytical Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <p class="text-sm text-gray-500 uppercase font-semibold">Total Pool Liquidity</p>
+                <h3 class="text-2xl font-bold text-gray-800">KES 12,450,000</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <p class="text-sm text-gray-500 uppercase font-semibold">Average Savings/Member</p>
+                <h3 class="text-2xl font-bold text-gray-800">KES 84,200</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-amber-500">
+                <p class="text-sm text-gray-500 uppercase font-semibold">Active Outstanding Loans</p>
+                <h3 class="text-2xl font-bold text-gray-800">KES 8,120,000</h3>
+            </div>
+        </div>
+
+        <!-- System Application Form Simulation -->
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md border border-gray-100">
+            <h2 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">Loan Qualification Processor</h2>
+            
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Connected to app.py mock endpoint: Loan evaluates successfully against the 3x safety buffer.');">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Member Total Savings (KES)</label>
+                    <input type="number" value="100000" class="mt-1 block w-full p-2 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Desired Loan Value (KES)</label>
+                    <input type="number" value="250000" class="mt-1 block w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500" required>
+                    <p class="text-xs text-gray-400 mt-1">System auto-calculates baseline rule safety factor limit up to 300,000 KES.</p>
+                </div>
+                <button type="submit" class="w-full bg-blue-900 text-white py-2 px-4 rounded-md font-medium hover:bg-blue-800 transition duration-200">
+                    Verify & Process Application
+                </button>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
